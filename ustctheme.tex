@@ -9,7 +9,7 @@
 	}
 \makeatother
 
-\newcommand{\maketitleframe}{
+\newcommand{\maketitleframe}[1]{
 	%取消footline,sidebar
 	\setbeamertemplate{footline}[footlineoff]
 	%%设置本命令以后的背景如下
@@ -19,6 +19,7 @@
 	%封面页
 	\begin{frame}%
 		\maketitle%
+		#1
 	\end{frame}%
 	%设置本命令以后的背景如下
 	\usebackgroundtemplate{%
